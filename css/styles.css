@@ -1,0 +1,256 @@
+@font-face {
+    font-family: 'MicrogrammaD';
+    src: url('../fonts/MicrogrammaD.woff2') format('woff2');
+}
+
+body {
+    font-family: 'MicrogrammaD', Arial, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    color: #000000;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    position: relative;
+}
+
+nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #be4572;
+}
+
+nav ul .dropdown {
+    display: none;
+    position: absolute;
+    font-family: 'aespa', Arial, sans-serif;
+    background-color: #ffffff;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+}
+
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    border-bottom: 1px solid #444;
+}
+
+#pesquisa {
+    color: #be4572;
+}
+
+#pesquisa:hover {
+    color: #000000;
+}
+
+.principal {
+    background-image: url("../images/fundoprincipal.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.principal h1 {
+    font-size: 60px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-top: 5%;
+}
+
+#titulo {
+    color: #d9d9d9;
+}
+
+.principal h2 {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.olharlunar {
+    width: 38%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.novamusica {
+    font-family: 'MicrogrammaD', Arial, sans-serif;
+    font-size: 20px;
+    background-color: #be4572;
+    color: #ffffff;
+    border-radius: 10px;
+    border-color: #ffffff;
+    text-align: center;
+    padding: 15px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+p {
+    text-align: center;
+    padding: 60px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: nowrap;
+    gap: 20px;
+}
+
+.gallery a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #be4572;
+    font-weight: bold;
+}
+
+.gallery img {
+    width: 75%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.contato {
+    padding: 50px 20px;
+    margin: 50px auto;
+    max-width: 800px;
+}
+
+.contato h2 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 30px;
+    color: #be4572;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.contato .informacoes {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contato .informacoes li {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000000;
+}
+
+.contato .informacoes li a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.contato .informacoes li a:hover {
+    color: #be4572;
+}
+
+.contato .informacoes li i {
+    margin-right: 10px;
+    color: #be4572;
+}
+
+.contato .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contato .form label {
+    font-size: 18px;
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.contato .form input[type="text"],
+.contato .form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+}
+
+.contato .form input[type="submit"] {
+    background-color: #be4572;
+    color: #fff;
+    border: none;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contato .form input[type="submit"]:hover {
+    background-color: #a03d60;
+}
+
+footer {
+    background-color: #873da0;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+}
+
+.social-media {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-media li {
+    margin: 0 10px;
+}
+
+.social-media a {
+    color: #ffffff;
+}
